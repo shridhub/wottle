@@ -1,0 +1,38 @@
+body {
+    background: #D3E4CD;
+    color: #FAEDF0;
+    font-family: Red Hat Display;
+}
+
+.self-card {
+    background: #519259;
+}
+
+.add {
+    background: yellow;
+    width: 30px;
+    height: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.subtract {
+    background: yellow;
+    width: 30px;
+    height: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.value {
+    background: white;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+
+.total {
+    color: black;
+    background: white;
+    display: inline;
+}
