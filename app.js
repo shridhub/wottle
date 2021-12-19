@@ -5,7 +5,7 @@ const path = require('path')
 viewsPath = path.join(__dirname, 'pages/views')
 partPaths = path.join(__dirname, '/pages/partials')
 
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 3000
 
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
