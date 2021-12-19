@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
     res.render('index', { data: arr})
 })
 
-app.listen('8080',() => {
+app.listen(8080 || process.env.PORT,() => {
     console.log('All going well')
 })
