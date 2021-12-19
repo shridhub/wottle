@@ -5,6 +5,8 @@ const path = require('path')
 viewsPath = path.join(__dirname, 'pages/views')
 partPaths = path.join(__dirname, '/pages/partials')
 
+const port = 3000 || process.env.PORT
+
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 
@@ -22,6 +24,6 @@ app.get('/', (req, res) => {
     res.render('index', { data: arr})
 })
 
-app.listen(8080 || process.env.PORT,() => {
+app.listen(port,() => {
     console.log('All going well')
 })
