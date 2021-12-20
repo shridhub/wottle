@@ -35,4 +35,5 @@ body {
     color: black;
     background: white;
     display: inline;
+    border-radius: 5px;
 }

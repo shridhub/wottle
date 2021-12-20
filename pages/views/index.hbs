@@ -16,19 +16,19 @@
 
 <body>
 
-    <div class="row m-5">
+    <div class="row m-5 sticky-top p-3" style="background: #064635; z-index: 1; border-radius: 10px;">
         <div class="col-lg-10" style="color:cadetblue"><p class="h1">Water Bottle Shopping</p></div>
-        <div class="col-lg-2 p-3"><span style="color: black;">Cost: </span><p class="total mt-5 mx-5 p-2">0</p></div>
+        <div class="col-lg-2 p-3 "><span style="color: white;">Cost: </span><p class="total mt-5 mx-5 p-2">0</p></div>
     </div>
-    <div class="row m-4 mt-0 pt-0 p-5">
+    <div class="row m-4 mt-0 pt-0 p-5 d-flex justify-content-around">
         {{#each data}}
-        <div class="col-lg-3 col-md-4 col-sm-12 mx-2 my-5 p-3">
+        <div class="col-lg-3 col-md-4 col-sm-12 my-5">
             <div class="card self-card p-3" style="border-radius:10px;">
                 <img src='{{this.photo}}' class="card-img-top img-fluid" alt="..." style="border-radius: 20px;">
                 <div class="card-body">
                     <div class="d-flex justify-content-between m-0">
                         <p class="h3" style="display: inline;"><b>{{this.brand}}</b></p>
-                        <p class="h4 cost" style="display: inline;">{{this.cost}}₹</p>
+                        <p class="h4 cost" style="display: inline;color: #B4FE98; text-shadow: 0 0 10px green;">{{this.cost}}₹</p>
                     </div>
                     <p class="card-text" style="display: inline;">{{this.size}}</p>
                 </div>
@@ -41,8 +41,6 @@
         </div>
         - {{/each}}
     </div>
-
-
 
 
     <script>
